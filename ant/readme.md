@@ -1,0 +1,2 @@
+Pour executer ce projet, il faut telecharger apache-ant et configurer la varible d'environnemnt, creer le dossier rsc et y mettre le fichier Bonjour.java, creer le fichier build.xml dans le dossier principal
+Ouvrir un terminal et executer la commande: ant _cible_, exemple _ant init_

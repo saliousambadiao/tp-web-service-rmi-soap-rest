@@ -1,0 +1,1 @@
+Pour visualiser le resultat de sax, il faut installer php puis demarrer avec la commande suivante le projet: php -S localhost:8000, puis ajouter /classe.php sur l'url.

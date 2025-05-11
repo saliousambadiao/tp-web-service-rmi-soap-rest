@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classe annee="2010">
+    <nom> DIC3</nom>
+    <personne>
+        <nom> SECK
+        </nom>
+        <prenom>Ndeye Aissatou
+        </prenom>
+        <date_naiss>30 septembre 1991
+        </date_naiss>
+        <email> aistouseckfr@yahoo.fr
+        </email>
+        <fonction>Eleve</fonction>
+    </personne>
+    <personne>
+        <nom> SECK
+        </nom>
+        <prenom>Amadou Abdoulaye
+        </prenom>
+        <date_naiss>23 mars 1979
+        </date_naiss>
+        <email> abdouse79
+        </email>
+        <fonction>professeur</fonction>
+    </personne>
+    <personne>
+        <nom> SECK
+        </nom>
+        <prenom>Alassane Farba
+        </prenom>
+        <date_naiss>18 mars 1985
+        </date_naiss>
+        <email> assane.seck@voila.fr
+        </email>
+        <fonction>éléve</fonction>
+    </personne>
+    <personne>
+        <nom> SECK
+        </nom>
+        <prenom>Ousseynou
+        </prenom>
+        <date_naiss>28 juin 1955
+        </date_naiss>
+        <email> seckousseynou@yahoo.fr
+        </email>
+        <fonction>professeur</fonction>
+    </personne>
+</classe>

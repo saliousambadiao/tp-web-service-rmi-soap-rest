@@ -1,0 +1,1 @@
+Pour visualiser le resultat de fo, il faut telecharger fop et configurer la variable d'environnement puis ouvrir un terminal et executer la commande suivante: fop -xml statistiques_equipe.xml -xsl statistique_fo.xsl -pdf statistiques_equipes.pdf

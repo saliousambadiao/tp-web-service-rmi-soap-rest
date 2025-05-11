@@ -1,0 +1,14 @@
+# Fichiers compilés Java
+*.class
+
+
+# Fichiers spécifiques à MacOS
+.DS_Store
+
+# Tomcat
+**/apache-tomcat-*/logs/
+**/apache-tomcat-*/work/
+**/apache-tomcat-*/temp/
+**/apache-tomcat-*/conf/
+**/apache-tomcat-*/webapps/
+

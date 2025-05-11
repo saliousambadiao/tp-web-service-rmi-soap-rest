@@ -1,0 +1,60 @@
+<project name="ProjetBonjour" default="all" basedir=".">
+    <!-- Définition des propriétés -->
+    <property name="src.dir" value="src"/>
+    <property name="bin.dir" value="bin"/>
+    <property name="doc.dir" value="doc"/>
+    <property name="archive.dir" value="archive"/>
+    <property name="main.class" value="Bonjour"/>
+
+    <!-- Cible : init -->
+    <target name="init" description="Initialiser l'environnement">
+        <mkdir dir="${bin.dir}"/>
+        <mkdir dir="${doc.dir}"/>
+        <mkdir dir="${archive.dir}"/>
+    </target>
+
+    <!-- Cible : compile -->
+    <target name="compile" depends="init" description="Compiler le projet">
+        <javac srcdir="${src.dir}" destdir="${bin.dir}"/>
+    </target>
+
+    <!-- Cible : doc -->
+    <target name="doc" depends="init" description="Générer la documentation API">
+        <javadoc destdir="${doc.dir}">
+            <fileset dir="${src.dir}">
+                <include name="**/*.java"/>
+            </fileset>
+        </javadoc>
+    </target>
+
+
+    <!-- Cible : archive -->
+    <target name="archive" depends="compile" description="Archiver le projet">
+        <jar destfile="${archive.dir}/ProjetBonjour.jar" basedir="${bin.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="${main.class}"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <!-- Cible : clean -->
+    <target name="clean" description="Nettoyer l'environnement">
+        <delete dir="${bin.dir}"/>
+        <delete dir="${doc.dir}"/>
+        <delete dir="${archive.dir}"/>
+    </target>
+
+    <!-- Cible : execute -->
+    <target name="execute" depends="compile" description="Exécuter le projet">
+        <java classname="${main.class}" fork="true">
+            <classpath>
+                <pathelement path="${bin.dir}"/>
+            </classpath>
+        </java>
+    </target>
+
+    <!-- Cible : all -->
+    <target name="all" depends="clean,init,compile,doc,archive,execute" description="Appeler toutes les cibles">
+        <echo>Le projet a été exécuté avec succès !</echo>
+    </target>
+</project>

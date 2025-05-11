@@ -1,0 +1,1 @@
+Pour visualiser le resultat avec les deux fichiers, statistiques.xsl et statistiques_equipe.xml, il suffit de demarrer live server.
