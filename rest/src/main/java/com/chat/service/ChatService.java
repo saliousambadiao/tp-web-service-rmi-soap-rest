@@ -1,3 +1,8 @@
+/**
+ * Author: Saliou Samba DIAO
+ * Email : saliousambadiao@esp.sn
+ * Date  : 2025-05-11
+ */
 package com.chat.service;
 
 import com.chat.model.Message;

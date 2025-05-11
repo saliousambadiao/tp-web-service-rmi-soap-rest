@@ -1,3 +1,8 @@
+/**
+ * Author: Saliou Samba DIAO
+ * Email : saliousambadiao@esp.sn
+ * Date  : 2025-05-11
+ */
 import javax.swing.*;
 import javax.swing.text.*;
 import java.awt.*;

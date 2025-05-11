@@ -1,3 +1,8 @@
+/**
+ * Author: Saliou Samba DIAO
+ * Email : saliousambadiao@esp.sn
+ * Date  : 2025-05-11
+ */
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
