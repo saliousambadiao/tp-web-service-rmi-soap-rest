@@ -1,9 +1,9 @@
 # Fichiers compilés Java
 *.class
 
-
 # Fichiers spécifiques à MacOS
 .DS_Store
+.vscode
 
 # Tomcat
 **/apache-tomcat-*/logs/
@@ -11,3 +11,4 @@
 **/apache-tomcat-*/temp/
 **/apache-tomcat-*/conf/
 
+commons-codec-1.17.2

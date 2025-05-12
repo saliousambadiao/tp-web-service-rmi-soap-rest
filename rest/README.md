@@ -40,8 +40,6 @@ L'application est organisée selon les principes de conception standard de JAX-R
   - `web.xml` - Configuration du servlet Jersey pour mapper les URI aux ressources JAX-RS
 
 ### Clients
-- **Client Console** :
-  - `ChatConsoleClient.java` - Interface en ligne de commande utilisant HttpURLConnection
 
 - **Client GUI** :
   - `ChatGuiClient.java` - Interface graphique avec JTextPane pour le formatage des messages
@@ -84,15 +82,34 @@ javac -d build/classes src/main/java/com/chat/model/*.java src/main/java/com/cha
 ```
 
 2. Créez un WAR et déployez-le manuellement sur votre serveur.
+Deplacez vous dans le dossier build
+```bash
+cd build
+```
+
+Créez un fichier WAR
+```bash
+jar -cvf ../chat-rest.war *
+```
+
+Copiez le fichier WAR dans le répertoire webapps de votre serveur d'application.
+Revenez dans le dossier parent
+```bash
+cd ..
+```
+
+Copiez le fichier WAR dans le répertoire webapps de votre serveur d'application.
+```bash
+cp chat-rest.war /path/to/tomcat/webapps/
+```
+redemarrer le serveur tomcat
+```bash
+/path/to/tomcat/bin/shutdown.sh
+/path/to/tomcat/bin/startup.sh
+```
 
 ## Exécution des Clients
 
-### Client Console
-
-```bash
-javac ChatConsoleClient.java
-java ChatConsoleClient
-```
 
 ### Client GUI
 

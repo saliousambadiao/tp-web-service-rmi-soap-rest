@@ -1,6 +1,10 @@
 /**
  * Service web SOAP pour une salle de chat (version ultra-simplifiée)
  * Implémente les fonctionnalités de base d'une salle de discussion avec des types primitifs uniquement
+ *
+ * Author: Saliou Samba DIAO
+ * Email : saliousambadiao@esp.sn
+ * Date  : 2025-05-11
  */
 public class ChatRoom {
     // Stockage simplié des utilisateurs et messages (maximum 100)
